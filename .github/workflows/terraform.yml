@@ -11,13 +11,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Show Runner Info
-        run: |
-          hostname
-          whoami
-
-      - name: Terraform Version
+      - name: Verify Terraform
         run: terraform version
 
-      - name: Azure Login Check
+      - name: Verify Azure Login
         run: az account show
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
