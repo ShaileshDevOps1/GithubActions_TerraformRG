@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "LAPTOP-JKE6OTA6",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus10.actions.githubusercontent.com/LMjoAwo671zqVHuVkzD0MMsey4B8X0uGB7t9KRh9I8iPG45crY/",
+  "gitHubUrl": "https://github.com/ShaileshDevOps1/GithubActions_TerraformRG",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

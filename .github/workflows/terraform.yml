@@ -1,0 +1,23 @@
+name: Terraform Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    runs-on: [self-hosted, windows, x64]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show Runner Info
+        run: |
+          hostname
+          whoami
+
+      - name: Terraform Version
+        run: terraform version
+
+      - name: Azure Login Check
+        run: az account show
